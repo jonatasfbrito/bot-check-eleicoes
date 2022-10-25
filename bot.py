@@ -13,4 +13,7 @@ def votos(message):
     bot.reply_to(message, resuts)
 
 
+print("What's going on here?")
+print("Nada.")
+
 bot.infinity_polling()
