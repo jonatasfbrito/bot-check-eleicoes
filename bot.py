@@ -20,7 +20,7 @@ while True:
         print('Executando..')
         time.sleep(12)
         cid = -1001577196038
-        bot = telebot.TeleBot("5721885549:AAFTyeZfHoH7l34WgptlWq8TMhDG8gZRvq8", parse_mode="HTML")
+        bot = telebot.TeleBot("5721885549:AAFTyeZfHoH7l34WgptlWq8TMhDG8gZRvq8")
         resuts = getVotos()
         bot.send_message(cid, 'ENVIANDO ATUALIZAÇÃO DAS ELEIÇÕES!! AGUAREM!! ( 20s )')
         # cara essa parte me quebrou -
