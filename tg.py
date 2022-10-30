@@ -7,14 +7,15 @@ def getVotos():
     url = "https://resultados.tse.jus.br/oficial/app/index.html#/m/eleicao;e=e545/resultados"
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('--disable-gpu')
-    chrome_options.add_argument('--window-size=1366,768')
+    chrome_options.add_argument('--window-size=1920,768')
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--lang=pt-BR')
     nav = webdriver.Chrome(executable_path='./chromedriver', chrome_options=chrome_options)
     nav.get(url)
-    sleep(20)
+    sleep(15)
     msg = nav.find_element("xpath", "/html/body")
     # secoes e dia
+    sleep(9)
     secoes_totalizadas = msg.text.split("\n")[9]
     ultima_att = msg.text.split("\n")[12]
 
