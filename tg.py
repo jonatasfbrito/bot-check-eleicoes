@@ -16,6 +16,7 @@ def getVotos():
     msg = nav.find_element("xpath", "/html/body")
     # secoes e dia
     sleep(9)
+    print(msg.text)
     secoes_totalizadas = msg.text.split("\n")[9]
     ultima_att = msg.text.split("\n")[12]
 
