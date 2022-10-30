@@ -2,15 +2,17 @@ import selenium
 from selenium import webdriver
 import time
 from time import sleep
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 def getVotos():
     url = "https://resultados.tse.jus.br/oficial/app/index.html#/m/eleicao;e=e545/resultados"
-    options = webdriver.ChromeOptions()
-    options.add_argument("--headless")
-    options.add_argument("--window-size=1366,768")
-    print("Full Screen")
-    nav = webdriver.Chrome("./chromedriver", chrome_options=options)
+    chrome_options = Options()
+    chrome_options.binary_location = GOOGLE_CHROME_BIN
+    chrome_options.add_argument('--disable-gpu')
+    chrome_options.add_argument('window-size=1366x768')
+    chrome_options.add_argument('--no-sandbox')
+    nav = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH, chrome_options=chrome_options)
     nav.get(url)
     sleep(3)
     msg = nav.find_element("xpath", "/html/body")
