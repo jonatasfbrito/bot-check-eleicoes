@@ -1,4 +1,3 @@
 selenium
 telebot
-webdriver_managerw
-
+webdriver_manager
