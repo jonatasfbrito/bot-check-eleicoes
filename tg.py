@@ -5,7 +5,7 @@ from time import sleep
 
 def getVotos():
     url = "https://resultados.tse.jus.br/oficial/app/index.html#/m/eleicao;e=e545/resultados"
-    chrome_options = ChromeOptions()
+    chrome_options = Options()
     chrome_options.add_argument('--disable-gpu')
     chrome_options.add_argument('window-size=1366x768')
     chrome_options.add_argument('--no-sandbox')
