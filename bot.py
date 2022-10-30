@@ -9,8 +9,7 @@ import datetime
 while True:
     # aqui ele vai ver se a data de hoje é
     # o dia do segundo turno
-    if datetime.date.today() != '2022-10-30':
-        print(datetime.date.today())
+    if datetime.date.today() == '2022-10-30':
         print('As eleições ainda não se iniciaram. Repassando!!!')
         time.sleep(1000)
         # depois daqui ele vai repetir o processo ate dar dia 30
@@ -20,9 +19,10 @@ while True:
         # e criando a instancia do bot
         print('Executando..')
         time.sleep(12)
-        cid = 2057492020
+        cid = -1001577196038
         bot = telebot.TeleBot("5721885549:AAFTyeZfHoH7l34WgptlWq8TMhDG8gZRvq8", parse_mode="HTML")
         resuts = getVotos()
+        bot.send_message(cid, 'ENVIANDO ATUALIZAÇÃO DAS ELEIÇÕES!! AGUAREM!! ( 20s )')
         # cara essa parte me quebrou -
         # legal pqp KKKKKKKKKKKKKKKK -
         # rachei mt

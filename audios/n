@@ -1,0 +1,40 @@
+System:
+  Host: 23077527-2077527 Kernel: 5.15.0-50-generic x86_64 bits: 64 
+  Desktop: Xfce 4.14.2 Distro: Ubuntu 20.04.5 LTS (Focal Fossa) 
+Machine:
+  Type: Desktop System: Positivo Tecnologia SA product: C6300 v: N/A 
+  serial: <superuser/root required> 
+  Mobo: Positivo Tecnologia SA model: POS-RIH470EM v: 11178483 
+  serial: <superuser/root required> 
+  UEFI: Desenvolvido por Positivo Tecnologia SA v: 0302.1.X.D5.H5.P 
+  date: 03/03/2022 
+CPU:
+  Topology: Quad Core model: Intel Core i3-10100T bits: 64 type: MT MCP 
+  L2 cache: 6144 KiB 
+  Speed: 801 MHz min/max: 800/3800 MHz Core speeds (MHz): 1: 800 2: 801 
+  3: 800 4: 800 5: 801 6: 800 7: 801 8: 800 
+Graphics:
+  Device-1: Intel driver: i915 v: kernel 
+  Display: x11 server: X.Org 1.20.13 driver: modesetting 
+  unloaded: fbdev,vesa resolution: 1920x1080~60Hz 
+  OpenGL: renderer: Mesa Intel UHD Graphics 630 (CML GT2) v: 4.6 Mesa 21.2.6 
+Audio:
+  Device-1: Intel Comet Lake PCH cAVS driver: snd_hda_intel 
+  Sound Server: ALSA v: k5.15.0-50-generic 
+Network:
+  Device-1: Intel Wi-Fi 6 AX201 driver: iwlwifi 
+  IF: wlo1 state: down mac: c8:cb:9e:f1:ca:20 
+  Device-2: Intel Ethernet I219-V driver: e1000e 
+  IF: eno2 state: up speed: 100 Mbps duplex: full mac: a8:a1:59:d2:ec:f2 
+Drives:
+  Local Storage: total: 238.47 GiB used: 13.86 GiB (5.8%) 
+  ID-1: /dev/nvme0n1 model: NVMe CL1-8D256 size: 238.47 GiB 
+Partition:
+  ID-1: / size: 233.18 GiB used: 13.85 GiB (5.9%) fs: ext4 
+  dev: /dev/nvme0n1p2 
+Sensors:
+  System Temperatures: cpu: 45.0 C mobo: N/A 
+  Fan Speeds (RPM): N/A 
+Info:
+  Processes: 230 Uptime: 9h 57m Memory: 7.17 GiB used: 715.6 MiB (9.7%) 
+  Shell: bash inxi: 3.0.38 

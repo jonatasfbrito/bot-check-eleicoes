@@ -9,7 +9,7 @@ def getVotos():
     options = webdriver.ChromeOptions()
     options.add_argument("--headless")
     options.add_argument("--window-size=1366,768")
-    print("Full Screen: OK")
+    print("Full Screen")
     nav = webdriver.Chrome("./chromedriver", chrome_options=options)
     nav.get(url)
     sleep(3)
@@ -49,7 +49,7 @@ def getVotos():
 """
     else:
         desc = f"""
-=> TAPORRA DUELO DE TITÃNS KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+=> TAPORRA DUELO DE TITÃNS KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
 
 => EMPATE
 
@@ -59,4 +59,3 @@ def getVotos():
 
     return desc
     nav.quit()
-    print('Terminei a request, organizei os dados e enviei a mensagem!!')
