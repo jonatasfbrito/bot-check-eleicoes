@@ -12,7 +12,7 @@ def getVotos():
     chrome_options.add_argument('--lang=pt-BR')
     nav = webdriver.Chrome(executable_path='./chromedriver', chrome_options=chrome_options)
     nav.get(url)
-    sleep(3)
+    sleep(20)
     msg = nav.find_element("xpath", "/html/body")
     # secoes e dia
     secoes_totalizadas = msg.text.split("\n")[9]
