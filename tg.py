@@ -8,11 +8,10 @@ from webdriver_manager.chrome import ChromeDriverManager
 def getVotos():
     url = "https://resultados.tse.jus.br/oficial/app/index.html#/m/eleicao;e=e545/resultados"
     chrome_options = Options()
-    chrome_options.binary_location = GOOGLE_CHROME_BIN
     chrome_options.add_argument('--disable-gpu')
     chrome_options.add_argument('window-size=1366x768')
     chrome_options.add_argument('--no-sandbox')
-    nav = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH, chrome_options=chrome_options)
+    nav = webdriver.Chrome(executable_path='./chromedriver', chrome_options=chrome_options)
     nav.get(url)
     sleep(3)
     msg = nav.find_element("xpath", "/html/body")
