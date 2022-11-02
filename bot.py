@@ -18,7 +18,7 @@ while True:
         # ja vai pegando o resultado dos votos
         # e criando a instancia do bot
         print('Executando..')
-        time.sleep(12)
+        time.sleep(50)
         cid = -1001577196038
         bot = telebot.TeleBot("5721885549:AAFTyeZfHoH7l34WgptlWq8TMhDG8gZRvq8")
         resuts = getVotos()
@@ -34,7 +34,7 @@ while True:
             audio = open('./audios/bolsonaro_deixa_derramar.mp3','rb')
             bot.send_chat_action(cid, 'record_audio')
             bot.send_audio(cid, audio, caption=resuts)
-        elif 'EMPATE' in resuts:
+        elif 'DUELO' in resuts:
             bot.send_chat_action(cid, 'record_audio')
             audio = open('./audios/duelo.mp3','rb')
             bot.send_audio(cid, audio, caption=resuts)
